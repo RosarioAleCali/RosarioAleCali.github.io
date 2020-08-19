@@ -30,6 +30,7 @@
       <div class="navbar-nav ml-auto">
         <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#prices">Prices</a>
         <a class="nav-link" href="#contact-me">Contact Me</a>
       </div>
     </div>
@@ -81,51 +82,95 @@
 
       <!-- Services Section -->
       <div class="row align-items-center" id="services">
+        <div class="row">
+          <div class="col-md">
+            <h1 class="font-weight-bold">Services</h1>
+            <p class="font-weight-normal text-left">
+              With over 3 years of experience in tutoring students both at Seneca College and privately,
+              I pride myself with offering the best service in terms of quality and affordability.
+              As a recent graduate and current student, I understand where students struggle the most
+              and how these difficulties can be overcome.<br /><br />
+              Down below, you can find a break-down of the topics, concepts, and technologies that I tutor,
+              including the pricing structure.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <p class="font-weight-bold text-left">Topics and Concepts</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Procedural and Object-Oriented Programming</li>
+              <li class="list-group-item">Data Structures and Algorithms</li>
+              <li class="list-group-item">Parallel Programming and Computer Vision</li>
+              <li class="list-group-item">Web Technologies and Networking</li>
+              <li class="list-group-item">Database Design and Development</li>
+              <li class="list-group-item">Operating Systems and Productivity Software</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <p class="font-weight-bold text-left">Technologies</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">C/C++/C#, Java, JavaScript, Python</li>
+              <li class="list-group-item">OpenMP, CUDA, Intel DAAL, OpenCV</li>
+              <li class="list-group-item">React, NodeJS, Django, Socket Programming</li>
+              <li class="list-group-item">MySQL, Oracle PL/SQL, MongoDB</li>
+              <li class="list-group-item">Windows, Linux, MacOS, Microsoft Office, Microsoft Project</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prices Section-->
+      <div class="row" id="prices">
         <div class="col-md">
-          <h1 class="font-weight-bold">Services</h1>
+          <h1 class="font-weight-bold">Prices</h1>
           <p class="font-weight-normal text-left">
-            With over 3 years of experience in tutoring students both at Seneca College and privately,
-            I pride myself with offering the best service in terms of quality and affordability.
-            As a recent graduate and current student, I understand where students struggle the most
-            and how these difficulties can be overcome.<br /><br />
-            Down below, you can find a break-down of the topics, concepts, and technologies that I tutor,
-            including the pricing structure.
+            I offer two different types of pricing rates: Single-day rates and Multi-day rates.<br /><br />
+            Single-day rates are ideal for new students and people who require occasional help.
+            The rates are competitive, flexible, and commitment-free.<br /><br />
+            Multi-day rates are ideal for recurring students who need quality help at affordable prices.
+            While the rates are competitive and flexible, these rates do require a minimum commitment of two days and an
+            upfront payment.
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          <p class="font-weight-bold text-left">Topics and Concepts</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Procedural and Object-Oriented Programming</li>
-            <li class="list-group-item">Data Structures and Algorithms</li>
-            <li class="list-group-item">Parallel Programming and Computer Vision</li>
-            <li class="list-group-item">Web Technologies and Networking</li>
-            <li class="list-group-item">Database Design and Development</li>
-            <li class="list-group-item">Operating Systems and Productivity Software</li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <p class="font-weight-bold text-left">Technologies</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">C/C++/C#, Java, JavaScript, Python</li>
-            <li class="list-group-item">OpenMP, CUDA, Intel DAAL, OpenCV</li>
-            <li class="list-group-item">React, NodeJS, Django, Socket Programming</li>
-            <li class="list-group-item">MySQL, Oracle PL/SQL, MongoDB</li>
-            <li class="list-group-item">Windows, Linux, MacOS, Microsoft Office, Microsoft Project</li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <p class="font-weight-bold text-left">Pricing</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Individual Session (Online and In-Person): $30-$40/hour*</li>
-            <li class="list-group-item">Group session (2-4 people): $25-$35/hour*</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          <p class="text-left">* <span class="font-weight-bold">depends on topic difficulty</span></p>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Single-day rates
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$35/hr (1 hour)</li>
+                    <li class="list-group-item">$27.50/hr (2+ hour)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    Multi-day rates*
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$30/hr (1 hour)</li>
+                    <li class="list-group-item">$27.50/hr (2+ hour)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-left">* <span class="font-weight-bold">Requires upfront payment.</span></p>
         </div>
       </div>
 
