@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+  <!-- Font Awesome 4 Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
   <title>Fantastic Tutor</title>
 </head>
 
@@ -179,53 +183,32 @@
       <div class="row" id="contact-me">
         <div class="col-md">
           <h1 class="font-weight-bold text-center">Contact Me</h1>
-          <p class="font-weight-normal text-center">Have any questions for me? Want to book your next
+          <p class="font-weight-normal text-center">Do you have any questions or would like to book your next
             appointment?<br />
-            Reach out to me via Call/Text/WhatsApp (<a href="tel:+1-905-716-6539">+1 (905) 716-6539</a>) or
-            by
-            e-mail (<a href="mailto:alexcali@outlook.it?Subject=Fantastic%20Tutoring%20Inquiry"
-              target="_top">alexcali@outlook.it</a>)!<br />
-            Additionally, you can use the form down below or <a href="https://calendly.com/alexcali"
-              target="_blank">calendly</a> to book an appointment
-            right away!
+            Reach out to me and I will get back to you within 24 hours.<br />
+            Here's my contact info:
+          <div class="card text-center mx-auto" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <a href="tel:+1-905-716-6539">+1 (905) 716-6539</a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:alexcali@outlook.it?Subject=Fantastic%20Tutoring%20Inquiry"
+                  target="_top">alexcali@outlook.it</a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                <a href="https://calendly.com/alexcali" target="_blank">Calendly</a>
+              </li>
+            </ul>
+          </div>
           </p>
         </div>
       </div>
-      <form id="contact-me-form" action="/">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="first-name">First name</label>
-            <input type="text" class="form-control" id="first-name" placeholder="First name" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="last-name">Last name</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="help">Help</label>
-            <input type="text" class="form-control" id="help" placeholder="I need help in... (1 sentance max)" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description"
-              placeholder="Please describe in greater detail how I can help you. Be as specific as possible in your description by giving enough context. Feel free to leave your contact info as well."></textarea>
-            <small id="descriptionHelpBlock" class="form-text text-muted">
-              Please describe in greater detail how I can help you. Be as specific as possible in your
-              description by giving enough context. Feel free to leave your contact info as well.
-            </small>
-          </div>
-        </div>
-        <div id="result"></div>
-        <button type="submit" class="btn btn-dark">Send!</button>
-      </form>
     </div>
   </main>
 
