@@ -248,41 +248,6 @@
       });
     });
   </script>
-
-  <!-- Make request to server to submit form -->
-  <script>
-    $("#contact-me-form").submit(function (event) {
-      // Stop form from submitting normally
-      event.preventDefault();
-
-      // Getting values from form
-      var $form = $(this);
-      var firstName = $form.find("input[id='first-name']").val();
-      var lastName = $form.find("input[id='last-name']").val();
-      var email = $form.find("input[id='email']").val();
-      var help = $form.find("input[id='help']").val();
-      var description = $form.find("textarea[id='description']").val();
-
-      // Send the data using using post
-      var posting = $.post('https://us-central1-fantastic-tutor-backend.cloudfunctions.net/contact/contact-me', { firstName: firstName, lastName: lastName, email: email, help: help, description: description });
-
-      // Put the results in a div
-      posting.done(function (data) {
-        console.log(123)
-        var result = data.success;
-        var content;
-
-        if (result == true) {
-          content = "<div class='alert alert-success' role='alert'>Message successfully sent!</div >";
-        }
-        else {
-          content = "<div class='alert alert-danger' role='alert'>Error while sending message, try again later!</div >";
-        }
-
-        $("#result").empty().append(content);
-      });
-    });
-  </script>
 </body>
 
 </html>
